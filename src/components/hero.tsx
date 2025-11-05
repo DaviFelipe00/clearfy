@@ -6,7 +6,7 @@ export function Hero() {
     <section className="w-full py-24 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+        <div className="inline-flex items-center gap-2 bg-sky-100 text-sky-700 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
           <Sparkle className="w-4 h-4" />
           Limpeza profissional que transforma ambientes
         </div>
@@ -26,7 +26,7 @@ export function Hero() {
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
           <Link
             href="#solicitar"
-            className="flex items-center justify-center gap-2 bg-blue-500 text-white px-7 py-3 rounded-lg font-semibold text-lg hover:bg-blue-600 transition-colors shadow-md"
+            className="flex items-center justify-center gap-2 bg-sky-500 text-white px-7 py-3 rounded-lg font-semibold text-lg hover:bg-blue-600 transition-colors shadow-md"
           >
             Solicitar Orçamento
             <span aria-hidden="true">&rarr;</span>

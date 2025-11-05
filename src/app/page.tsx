@@ -1,10 +1,17 @@
-import { Hero } from "@/components/hero"; // Importa a seção Hero
+import { Hero } from "@/components/hero";
+import { Services } from "@/components/Services";
+import { Features } from "@/components/Features";
+import { Benefits } from "@/components/Benefits";
+import { CallToAction } from "@/components/CallToAction";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      {/* Nossas próximas seções (Serviços, Benefícios, etc.) virão aqui */}
+      <Services />
+      <Features />
+      <Benefits />
+      <CallToAction />
     </main>
   );
 }
