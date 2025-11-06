@@ -1,4 +1,3 @@
-// Em: src/components/Header.tsx
 import Link from 'next/link';
 
 export function Header() {
@@ -23,7 +22,8 @@ export function Header() {
         {/* Botão de Orçamento */}
         <a
           href="#solicitar"
-          className="bg-sky-500 text-white px-5 py-2 rounded-lg font-medium hover:bg-sky-600 shadow-md"
+          // MELHORIA: Trocado de 'font-medium' para 'font-semibold'
+          className="bg-sky-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-sky-600 shadow-md"
         >
           Solicitar Orçamento
         </a>

@@ -12,10 +12,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* MELHORIA:
-  - Adiciona rolagem suave para navegação em âncoras (#).
-  - Adiciona transições suaves para todos os elementos (hover, etc).
-*/
 @layer base {
   html {
     @apply scroll-smooth;
