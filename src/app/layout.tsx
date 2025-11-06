@@ -1,19 +1,18 @@
 // Em: src/app/layout.tsx
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// 1. Mude a importação de "Geist" para "Figtree"
+import { Figtree } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// 2. Configure a nova fonte (Figtree)
+// Escolhemos os pesos que o design usa (normal, semi-bold, e bold)
+const figtree = Figtree({
+  variable: "--font-sans", // Vamos usar uma variável genérica
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "600", "800"], // Regular, SemiBold, ExtraBold
 });
 
 export const metadata: Metadata = {
@@ -29,7 +28,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-black`}
+        // 3. Aplique a variável da Figtree aqui
+        // (Removemos a fonte mono, pois não é necessária)
+        className={`${figtree.variable} antialiased bg-white`}
       >
         <Header />
         {children}

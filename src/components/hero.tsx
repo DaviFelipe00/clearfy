@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export function Hero() {
   return (
-    <section className="w-full py-24 md:py-32 bg-white">
+    <section className="w-full pt-24 py-24 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-sky-100 text-sky-700 px-4 py-1.5 rounded-full text-sm font-medium mb-6">

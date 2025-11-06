@@ -23,7 +23,6 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-zinc-900 mb-4">Produto</h3>
             <nav className="flex flex-col gap-3">
-              <Link href="#recursos" className="text-zinc-600 hover:text-sky-500 transition-colors">Recursos</Link>
               <Link href="#precos" className="text-zinc-600 hover:text-sky-500 transition-colors">Preços</Link>
               <Link href="#integracoes" className="text-zinc-600 hover:text-sky-500 transition-colors">Integrações</Link>
             </nav>
