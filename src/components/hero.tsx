@@ -9,12 +9,11 @@ const containerVariants: Variants = {
     opacity: 1,
     transition: {
       staggerChildren: 0.08,
-      delayChildren: 0.30,
+      delayChildren: 0.3,
     },
   },
 };
 
-// → Surge fixo, sem mover verticalmente
 const fadeInFixed: Variants = {
   hidden: { opacity: 0 },
   show: {
@@ -39,8 +38,8 @@ const buttonVariants: Variants = {
 
 export function Hero() {
   return (
-    <section className="relative w-full pt-40 pb-24 md:pt-48 md:pb-32 bg-gradient-to-b from-sky-50/30 via-white to-white overflow-hidden">
-      {/* Background gradient */}
+    <section className="relative w-full pt-40 pb-24 md:pt-48 md:pb-32 gradient-bg overflow-hidden">
+      {/* Background decorativo adicional */}
       <motion.div
         className="absolute inset-x-0 top-0 h-[600px] w-full max-w-7xl mx-auto"
         initial={{ opacity: 0 }}
@@ -64,6 +63,7 @@ export function Hero() {
         }}
         aria-hidden="true"
       />
+
       <motion.div
         className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl"
         initial={{ opacity: 0 }}
@@ -81,7 +81,7 @@ export function Hero() {
         initial="hidden"
         animate="show"
       >
-        {/* Título - Agora o primeiro item animado */}
+        {/* Título */}
         <motion.h1
           variants={fadeInFixed}
           className="text-5xl md:text-7xl font-extrabold tracking-tighter bg-gradient-to-br from-sky-600 via-sky-500 to-blue-600 bg-clip-text text-transparent max-w-4xl leading-tight"

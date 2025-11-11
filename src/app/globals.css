@@ -23,7 +23,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ffffff;  /* Força o fundo branco mesmo em dark mode */
+    --background: #ffffff; 
     --foreground: #171717;
   }
 }
@@ -32,4 +32,10 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #E0F2FE 0%, #BAE6FD 50%, #7DD3FC 100%);
+  position: relative;
+  overflow: hidden;
 }
