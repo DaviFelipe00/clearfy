@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +9,12 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white/40 backdrop-blur-xl border-b border-white/30 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
+
+        {/* Logo em texto com degradê */}
         <Link href="/" className="hover:opacity-80 transition-opacity">
-          <Image src="next.svg" alt="Logo da sua empresa" width={80} height={40} priority />
+          <span className="text-2xl font-bold bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent">
+            CLEARFY
+          </span>
         </Link>
 
         {/* Menu desktop */}
@@ -42,13 +44,7 @@ export function Header() {
           className="md:hidden flex items-center justify-center p-2 rounded-md text-sky-600 hover:bg-white/20 transition"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {isOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -58,7 +54,7 @@ export function Header() {
         </button>
       </div>
 
-      {/* Menu mobile dropdown */}
+      {/* Menu mobile */}
       {isOpen && (
         <div className="md:hidden bg-white/40 backdrop-blur-xl border-t border-white/30 shadow-sm">
           <div className="px-6 py-4 flex flex-col gap-4">

@@ -38,7 +38,7 @@ const buttonVariants: Variants = {
 
 export function Hero() {
   return (
-    <section className="relative w-full pt-40 pb-24 md:pt-48 md:pb-32 gradient-bg overflow-hidden">
+    <section className="relative w-full min-h-screen flex items-center gradient-bg overflow-hidden pt-24">
       {/* Background decorativo adicional */}
       <motion.div
         className="absolute inset-x-0 top-0 h-[600px] w-full max-w-7xl mx-auto"
@@ -92,7 +92,7 @@ export function Hero() {
         {/* Subtítulo */}
         <motion.p
           variants={fadeInFixed}
-          className="mt-6 text-lg md:text-xl text-zinc-600 max-w-2xl leading-relaxed"
+          className="mt-6 text-lg md:text-xl text-sky-900 max-w-2xl leading-relaxed"
         >
           A Clearfy oferece serviços de limpeza profissional para residências e
           empresas. Qualidade, confiança e excelência em cada detalhe.
@@ -111,23 +111,9 @@ export function Hero() {
           >
             <Link
               href="#solicitar"
-              className="flex items-center justify-center gap-2 bg-gradient-to-r from-sky-500 to-sky-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-sky-600 hover:to-sky-700 shadow-lg shadow-sky-500/25 hover:shadow-xl hover:shadow-sky-500/40 transition-all duration-300 group"
+              className="flex items-center justify-center gap-2 bg-gradient-to-r from-sky-500 to-sky-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-sky-600 hover:to-sky-700 shadow-lg shadow-sky-500/25 hover:shadow-xl hover:shadow-sky-500/40 transition-all duration-300"
             >
               Solicitar Orçamento
-            </Link>
-          </motion.div>
-
-          <motion.div
-            variants={buttonVariants}
-            whileHover={{ y: -1 }}
-            whileTap={{ scale: 0.99 }}
-            transition={{ duration: 0.15 }}
-          >
-            <Link
-              href="#servicos"
-              className="flex items-center justify-center bg-white text-zinc-700 px-8 py-4 rounded-xl font-bold text-lg border-2 border-zinc-200 hover:bg-zinc-50 hover:border-sky-200 transition-all duration-300 backdrop-blur-sm"
-            >
-              Nossos Serviços
             </Link>
           </motion.div>
         </motion.div>
