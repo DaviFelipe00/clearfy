@@ -1,21 +1,25 @@
-// Em: src/components/Services.tsx
-
 import Image from "next/image";
+
+// Importação estática das imagens para gerar o blur automático
+// O caminho volta duas pastas (../..) para sair de 'components' e 'src' e chegar em 'public'
+import imgResidencial from "../../public/servicos/limpeza_2.jpeg";
+import imgComercial from "../../public/servicos/limpeza_3.jpeg";
+import imgPosObra from "../../public/servicos/limpeza_1.jpeg";
 
 export function Services() {
   const services = [
     {
-      img: "/servicos/limpeza_2.jpeg",
+      img: imgResidencial,
       title: "Limpeza Residencial",
       desc: "Serviços completos de limpeza para sua casa, com atenção a cada detalhe."
     },
     {
-      img: "/servicos/limpeza_3.jpeg",
+      img: imgComercial,
       title: "Limpeza Comercial",
       desc: "Soluções profissionais para escritórios, lojas e estabelecimentos comerciais."
     },
     {
-      img: "/servicos/limpeza_1.jpeg",
+      img: imgPosObra,
       title: "Limpeza Pós-Obra",
       desc: "Remoção completa de resíduos e sujeiras após reformas e construções."
     },
@@ -42,16 +46,19 @@ export function Services() {
               key={i}
               className="group bg-white p-10 rounded-3xl shadow-lg border border-sky-100 hover:border-sky-300 hover:shadow-xl hover:shadow-sky-200/50 transition-all duration-300 hover:-translate-y-1"
             >
-              {/* Imagem */}
-              <div className="relative w-full h-64 rounded-2xl overflow-hidden mb-6 shadow-md">
+              {/* Container da Imagem */}
+              <div className="relative w-full h-64 rounded-2xl overflow-hidden mb-6 shadow-md bg-zinc-100">
                 <Image
                   src={img}
                   alt={title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  // Otimização para tamanhos de tela
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  priority={i === 0}    // garante carregamento rápido da primeira
-                  loading={i === 0 ? "eager" : "lazy"} 
+                  // Prioridade apenas para a primeira imagem (LCP)
+                  priority={i === 0}
+                  // Efeito de desfoque mágico
+                  placeholder="blur"
                 />
               </div>
 
