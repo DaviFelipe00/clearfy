@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,12 +11,24 @@ export function Header() {
     <header className="fixed top-0 left-0 w-full z-50 bg-white/40 backdrop-blur-xl border-b border-white/30 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-        {/* Logo em texto com degradê */}
-        <Link href="/" className="hover:opacity-80 transition-opacity">
-          <span className="text-2xl font-bold bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent">
-            CLEARFY
-          </span>
-        </Link>
+        {/* Logo + SVG ao lado */}
+        <div className="flex items-center gap-3">
+          <Link href="/" className="hover:opacity-80 transition-opacity flex items-center gap-3">
+
+            <span className="text-2xl font-bold bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent">
+              CLEARFY
+            </span>
+
+            {/* 👉 Sua logo SVG aqui */}
+            <Image
+              src="./teste_logo.svg"   // <--- troque para o caminho do seu arquivo
+              alt="Logo"
+              width={50}
+              height={28}
+              className="opacity-90"
+            />
+          </Link>
+        </div>
 
         {/* Menu desktop */}
         <div className="hidden md:flex items-center gap-6">

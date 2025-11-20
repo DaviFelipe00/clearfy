@@ -41,7 +41,8 @@ export function Hero() {
     <section className="relative w-full min-h-screen flex items-center gradient-bg overflow-hidden pt-24">
       {/* Background decorativo adicional */}
       <motion.div
-        className="absolute inset-x-0 top-0 h-[600px] w-full max-w-7xl mx-auto"
+        // ADICIONADO: 'will-change-transform' para otimizar a renderização mobile
+        className="absolute inset-x-0 top-0 h-[600px] w-full max-w-7xl mx-auto will-change-transform"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -54,7 +55,8 @@ export function Hero() {
 
       {/* Elementos decorativos */}
       <motion.div
-        className="absolute top-20 left-10 w-64 h-64 bg-sky-400/5 rounded-full blur-3xl"
+        // ADICIONADO: 'will-change-transform'
+        className="absolute top-20 left-10 w-64 h-64 bg-sky-400/5 rounded-full blur-3xl will-change-transform"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: [0, -20, 0] }}
         transition={{
@@ -65,7 +67,8 @@ export function Hero() {
       />
 
       <motion.div
-        className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl"
+        // ADICIONADO: 'will-change-transform'
+        className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl will-change-transform"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: [0, 20, 0] }}
         transition={{
