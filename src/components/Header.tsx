@@ -42,12 +42,6 @@ export function Header() {
             href="#equipe"
             className="px-5 py-2 rounded-lg border border-sky-300/70 text-sky-600 font-semibold hover:bg-sky-50/60 backdrop-blur-sm transition-all duration-300"
           >
-            Faça parte da equipe
-          </Link>
-          <Link
-            href="#solicitar"
-            className="bg-sky-500/90 text-white px-5 py-2 rounded-lg font-semibold hover:bg-sky-600/90 shadow-md shadow-sky-500/20 backdrop-blur-sm transition-all duration-300"
-          >
             Solicitar Orçamento
           </Link>
         </div>
