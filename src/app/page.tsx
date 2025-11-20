@@ -10,11 +10,7 @@ export default function Home() {
       <FadeIn>
         <Hero />
       </FadeIn>
-
-      <FadeIn>
         <Services />
-      </FadeIn>
-      
       <FadeIn>
         <Benefits />
       </FadeIn>
