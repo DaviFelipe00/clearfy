@@ -54,9 +54,12 @@ export function Services() {
               key={i}
               className="group bg-white p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-md border border-sky-100 hover:border-sky-300 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             >
-              {/* Container da Imagem */}
-              <div className="relative w-full aspect-video rounded-xl md:rounded-2xl overflow-hidden mb-4 md:mb-6 shadow-sm bg-gradient-to-br from-sky-50 to-sky-100">
-                {/* Skeleton loader */}
+              {/* MUDANÇA AQUI: 
+                 1. 'aspect-[4/3]' é melhor para fotos verticais/retratos.
+                 2. 'object-top' garante que o rosto das pessoas não seja cortado.
+              */}
+              <div className="relative w-full aspect-[4/3] rounded-xl md:rounded-2xl overflow-hidden mb-4 md:mb-6 shadow-sm bg-gradient-to-br from-sky-50 to-sky-100">
+                
                 {!loadedImages.has(i) && (
                   <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-sky-100 via-sky-200 to-sky-100" />
                 )}
@@ -65,14 +68,15 @@ export function Services() {
                   src={img}
                   alt={title}
                   fill
-                  className={`object-cover transition-all duration-700 ${
+                  // 'object-top' foca no topo da imagem (rostos)
+                  className={`object-cover object-top transition-all duration-700 ${
                     loadedImages.has(i) ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
                   } group-hover:scale-105`}
                   sizes="(max-width: 640px) 95vw, (max-width: 768px) 48vw, (max-width: 1024px) 45vw, 380px"
                   loading={i === 0 ? "eager" : "lazy"}
                   priority={i === 0}
                   placeholder="blur"
-                  quality={75}
+                  quality={85}
                   onLoad={() => handleImageLoad(i)}
                 />
               </div>

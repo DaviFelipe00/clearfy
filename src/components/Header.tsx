@@ -14,19 +14,19 @@ export function Header() {
         {/* Logo + SVG ao lado */}
         <div className="flex items-center gap-3">
           <Link href="/" className="hover:opacity-80 transition-opacity flex items-center gap-3">
+            
+            {/* Correção: Caminho absoluto (sem o ponto) */}
+            <Image
+              src="/teste_logo.svg" 
+              alt="Logo Clearfy"
+              width={40}
+              height={40}
+              className="opacity-90 object-contain"
+            />
 
             <span className="text-2xl font-bold bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent">
               CLEARFY
             </span>
-
-            {/* 👉 Sua logo SVG aqui */}
-            <Image
-              src="./teste_logo.svg"   // <--- troque para o caminho do seu arquivo
-              alt="Logo"
-              width={50}
-              height={28}
-              className="opacity-90"
-            />
           </Link>
         </div>
 
