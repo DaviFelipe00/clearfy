@@ -113,7 +113,7 @@ export function Hero() {
             transition={{ duration: 0.15 }}
           >
             <Link
-              href="#solicitar"
+              href="/orcamento" // ALTERADO: Redireciona para a página de orçamento
               className="flex items-center justify-center gap-2 bg-gradient-to-r from-sky-500 to-sky-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-sky-600 hover:to-sky-700 shadow-lg shadow-sky-500/25 hover:shadow-xl hover:shadow-sky-500/40 transition-all duration-300"
             >
               Solicitar Orçamento

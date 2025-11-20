@@ -20,7 +20,7 @@ export function CallToAction() {
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
           <Link
-            href="#solicitar-form"
+            href="/orcamento" // ALTERADO: Redireciona para a página de orçamento
             className="flex items-center justify-center gap-2 bg-white text-sky-400 px-7 py-3 rounded-lg font-extrabold text-lg hover:bg-zinc-100 shadow-md"
           >
             Solicitar Orçamento
