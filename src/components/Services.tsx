@@ -1,7 +1,6 @@
 import Image from "next/image";
 
-// Importação estática das imagens para gerar o blur automático
-// O caminho volta duas pastas (../..) para sair de 'components' e 'src' e chegar em 'public'
+// Importação estática das imagens
 import imgResidencial from "../../public/servicos/limpeza_2.jpeg";
 import imgComercial from "../../public/servicos/limpeza_3.jpeg";
 import imgPosObra from "../../public/servicos/limpeza_1.jpeg";
@@ -53,12 +52,16 @@ export function Services() {
                   alt={title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  // Otimização para tamanhos de tela
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  // Prioridade apenas para a primeira imagem (LCP)
+                  // Tamanhos otimizados para diferentes dispositivos
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  // Carregamento lazy para imagens fora da viewport inicial
+                  loading={i === 0 ? "eager" : "lazy"}
+                  // Priority apenas para primeira imagem
                   priority={i === 0}
-                  // Efeito de desfoque mágico
+                  // Blur placeholder
                   placeholder="blur"
+                  // Qualidade otimizada (padrão é 75)
+                  quality={80}
                 />
               </div>
 
