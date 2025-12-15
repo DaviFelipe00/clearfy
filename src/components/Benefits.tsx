@@ -24,7 +24,7 @@ export function Benefits() {
 
             {/* Card 2: 98% */}
             <div className="group bg-white p-6 rounded-xl border border-zinc-200 hover:border-sky-300 transition-all duration-300 hover:shadow-lg">
-              <span className="text-5xl md:text-6xl font-bold text-sky-500 mb-4 block">98%</span>
+              <span className="text-5xl md:text-6xl font-bold text-sky-500 mb-4 block">99%</span>
               <h3 className="text-lg font-semibold text-zinc-900 mb-2">Satisfação Garantida</h3>
               <p className="text-sm text-zinc-600 leading-relaxed">
                 Se não ficar satisfeito, voltamos para refazer o serviço sem custo adicional.

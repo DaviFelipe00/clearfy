@@ -15,7 +15,7 @@ export function CallToAction() {
         </h2>
 
         <p className="mt-6 text-lg md:text-xl text-sky-400 max-w-2xl">
-          Junte-se a centenas de clientes satisfeitos que já transformaram seus ambientes com a Clearfy. Solicite seu orçamento hoje mesmo.
+          Junte-se a centenas de clientes satisfeitos que já transformaram seus ambientes com a Clearfy. Invista na sua praticidade e conforto hoje mesmo.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
@@ -23,7 +23,7 @@ export function CallToAction() {
             href="/orcamento" // ALTERADO: Redireciona para a página de orçamento
             className="flex items-center justify-center gap-2 bg-white text-sky-400 px-7 py-3 rounded-lg font-extrabold text-lg hover:bg-zinc-100 shadow-md"
           >
-            Solicitar Orçamento
+            Garantir Minha Profissional
           </Link>
           <Link
             href="https://wa.me/SEUNUMERO"

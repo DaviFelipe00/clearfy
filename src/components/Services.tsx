@@ -24,7 +24,7 @@ export function Services() {
     },
     {
       img: imgPosObra,
-      title: "Limpeza Pós-Obra",
+      title: "Organização e Limpeza Pós Mudança",
       desc: "Remoção completa de resíduos e sujeiras após reformas e construções."
     },
   ];
