@@ -26,7 +26,7 @@ export function CallToAction() {
             Garantir Minha Profissional
           </Link>
           <Link
-            href="https://wa.me/SEUNUMERO"
+            href="https://wa.me/S558187000534"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center bg-white/20 text-white px-7 py-3 rounded-lg font-extrabold text-lg border-2 border-white hover:bg-white/30 transition-all duration-300"
