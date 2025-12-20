@@ -26,11 +26,10 @@ export function CallToAction() {
             Garantir Minha Profissional
           </Link>
           <a // Mudei de Link para a
-            href="https://wa.me/558187000534"
+            href="https://wa.me/558195124721"
             target="_blank"
             rel="noopener noreferrer"
-          className="flex items-center justify-center bg-white/20 text-white px-7 py-3 rounded-lg font-extrabold text-lg border-2 border-white hover:bg-white/30 transition-all duration-300"
->
+          className="flex items-center justify-center bg-sky-600 text-white px-7 py-3 rounded-lg font-extrabold text-lg shadow-lg shadow-sky-600/20 hover:bg-sky-700 hover:shadow-sky-600/40 hover:-translate-y-0.5 transition-all duration-300">
   Falar no WhatsApp
 </a>
         </div>

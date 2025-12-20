@@ -14,18 +14,18 @@ export function Services() {
   const services = [
     {
       img: imgResidencial,
-      title: "Limpeza Residencial",
-      desc: "Serviços completos de limpeza para sua casa, com atenção a cada detalhe."
+      title: "Sua Casa",
+      desc: "Transformamos sua casa em um ambiente de saúde e bem-estar para você e sua família. Chegue em casa e sinta apenas o cheiro de tranquilidade. Cronogramas e Horários personalizados para caber na sua rotina."
     },
     {
       img: imgComercial,
-      title: "Limpeza Comercial",
-      desc: "Soluções profissionais para escritórios, lojas e estabelecimentos comerciais."
+      title: "Limpeza Comercial e Corporativa",
+      desc: "Um ambiente impecável comunica sucesso e organização para o seu cliente antes mesmo de você falar. Cuidamos da higiente e organização do seu escritório ou loja e otimizamos ao máximo sua produtividade e autoridade."
     },
     {
       img: imgPosObra,
-      title: "Organização e Limpeza Pós Mudança",
-      desc: "Remoção completa de resíduos e sujeiras após reformas e construções."
+      title: "Neuro-Hotelaria & Turnover (Airbnb)",
+      desc: "Não entregamos apenas faxina, garantimos avaliações 5 estrelas! A parceria estratégica para Superhosts. Atuamos como seus 'olhos' dentro do imóvel, com logística de turnover simples e fluida."
     },
   ];
 
@@ -40,10 +40,10 @@ export function Services() {
         {/* Títulos */}
         <div className="flex flex-col items-center text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent">
-            Serviços que fazem a diferença
+            Serviços que fazem diferença
           </h2>
           <p className="mt-3 md:mt-4 text-base md:text-lg text-zinc-600 max-w-2xl px-4">
-            Oferecemos soluções completas de limpeza para deixar seu ambiente impecável.
+            Mais do que limpeza, entregamos experiência sensorial. Oferecemos soluções completas para transformar ambientes, blindar patrimônios e devolver seu tempo.
           </p>
         </div>
 

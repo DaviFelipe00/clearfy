@@ -41,7 +41,7 @@ export function Header() {
             href="/orcamento"
             className="bg-sky-500/90 text-white px-5 py-2 rounded-lg font-semibold hover:bg-sky-600/90 shadow-md shadow-sky-500/20 backdrop-blur-sm transition-all duration-300"
           >
-            Solicitar Orçamento
+            Garantir profissional
           </Link>
         </div>
 
@@ -83,7 +83,7 @@ export function Header() {
               className="bg-sky-500/90 text-white px-5 py-2 rounded-lg font-semibold hover:bg-sky-600/90 text-center shadow-md shadow-sky-500/20 backdrop-blur-sm transition-all duration-300"
               onClick={() => setIsOpen(false)}
             >
-              Solicitar Orçamento
+              Falar com especialista
             </Link>
           </div>
         </div>

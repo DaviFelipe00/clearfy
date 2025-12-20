@@ -20,18 +20,18 @@ export function Footer() {
 
             <div className="flex flex-col gap-2 text-sm">
               <a
-                href="tel:+5511999999999"
+                href="https://wa.me/558195124721"
                 className="flex items-center gap-2 text-zinc-600 hover:text-sky-500 transition-colors"
               >
                 <Phone className="w-4 h-4 text-sky-500" />
-                (11) 99999-9999
+                (81) 99512-4721
               </a>
               <a
-                href="mailto:contato@clearfy.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=diaristasclearfy@gmail.com"
                 className="flex items-center gap-2 text-zinc-600 hover:text-sky-500 transition-colors"
               >
                 <Mail className="w-4 h-4 text-sky-500" />
-                contato@clearfy.com
+                diaristasclearfy@gmail.com
               </a>
               <div className="flex items-center gap-2 text-zinc-600">
                 <MapPin className="w-4 h-4 text-sky-500" />

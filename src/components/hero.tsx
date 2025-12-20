@@ -97,8 +97,8 @@ export function Hero() {
           variants={fadeInFixed}
           className="mt-6 text-lg md:text-xl text-sky-900 max-w-2xl leading-relaxed"
         >
-          A Clearfy oferece serviços de limpeza profissional para residências e
-          empresas. Qualidade, confiança e excelência em cada detalhe.
+          Serviços de limpeza e neuro-hotelaria profissional para: Residências, <br></br>Airbnb e
+          Empresas. Qualidade, confiança e excelência em cada detalhe.
         </motion.p>
 
         {/* Botões */}
@@ -116,7 +116,7 @@ export function Hero() {
               href="/orcamento" // ALTERADO: Redireciona para a página de orçamento
               className="flex items-center justify-center gap-2 bg-gradient-to-r from-sky-500 to-sky-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-sky-600 hover:to-sky-700 shadow-lg shadow-sky-500/25 hover:shadow-xl hover:shadow-sky-500/40 transition-all duration-300"
             >
-              Solicitar Orçamento
+              Falar com especialista
             </Link>
           </motion.div>
         </motion.div>
