@@ -18,6 +18,12 @@ const figtree = Figtree({
 export const metadata: Metadata = {
   title: "Clearfy - Limpeza Profissional",
   description: "Serviços de limpeza profissional para residências e empresas.",
+  // ADIÇÃO: Configuração do favicon em formato SVG
+  icons: {
+    icon: "/favicon.svg", // O arquivo deve estar na pasta /public
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
